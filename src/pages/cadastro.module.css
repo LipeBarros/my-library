@@ -1,0 +1,25 @@
+.ilustracao {
+  width: 50%;
+}
+
+.ilustracao img {
+  width: 100%;
+}
+
+.cadastro {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.cadastro img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+}

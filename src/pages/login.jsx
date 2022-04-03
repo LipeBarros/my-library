@@ -1,50 +1,39 @@
 import { Botao } from "../components/Botao"
-import "./login.css"
-
-
+import { Box } from "../components/Box"
+import { Campos } from "../components/Campos"
+import { InputText } from "../components/InputText"
+import { Titulo } from "../components/Titulo"
+import { AutentificacaoTemplate } from "../templates/AutentificacaoTemplate"
+import classes from "./login.module.css"
 
 function Login() {
-
-
-
-
   return (
     <>
-      <div className="container">
-        <div className="content">
-          <div className="ilustracao">
-            <img src="./ilustracao_login.jpg" alt="ilustracao" />
-          </div>
-          <div className="formulario">
-            <form action="http://localhost:3000/users" method="POST">
-              <div className="box">
-                <img src="./logo.jpg" alt="logo" />
-                <h1>Login de Usuário</h1>
-                <div className="campos">
-                  <div>
-                    <label>E-mail</label>
-                    <input type="text" name="email" />
-                  </div>
-                  <div>
-                    <label>Senha</label>
-                    <input type="password" name="senha" />
-                  </div>
-                  <div>
-                    <div className="botoes">
-                      <Botao name="Entrar" />
-                      <Botao name="Criar Conta" />
-                    </div>
+      <AutentificacaoTemplate>
+        <div className={classes.ilustracao}>
+          <img src="./ilustracao_login.jpg" alt="ilustracao" />
+        </div>
+        <div className={classes.formulario}>
+          <form action="http://localhost:3000/users" method="POST" className={classes.form}>
+            <Box>
+              <img src="./logo.jpg" alt="logo" className={classes.img} />
+              <Titulo nome="Login de Usuário" />
+              <Campos>
+                <InputText titulo="E-mail" nome="e-mail" />
+                <InputText titulo="Senha" nome="senha" tipo="password" />
+                <div>
+                  <div className={classes.botoes}>
+                    <Botao name="Entrar" />
+                    <Botao name="Criar Conta" link="/cadastro" />
                   </div>
                 </div>
-              </div>
-            </form>
-          </div>
+              </Campos>
+            </Box>
+          </form>
         </div>
-      </div>
+      </AutentificacaoTemplate>
     </>
   )
-
 }
-
 
 export { Login }

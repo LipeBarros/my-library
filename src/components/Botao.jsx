@@ -1,10 +1,19 @@
-import "./botao.css"
+import { Link } from "react-router-dom"
+import classes from "./Botao.module.css"
 
-function Botao({ name }) {
+function Botao({ name, link }) {
 
-  return(
-    <button>{name}</button>
-  )
+  if (link) {
+    return (
+      <Link to={link}>
+        <button className={classes.botao}>{name}</button>
+      </Link>
+    )
+  } else {
+    return (
+      <button className={classes.botao}>{name}</button>
+    )
+  }
 }
 
 export { Botao }

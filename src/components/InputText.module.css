@@ -1,0 +1,22 @@
+.label {
+  display: block;
+  color: rgb(90, 151, 151);
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.inputText {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 8px;
+  height: 35px;
+  border: 1px solid rgb(141, 145, 145);
+  padding: 10px;
+}
+
+.inputText:focus {
+  background-color: rgb(231, 240, 240);
+  border: 2px solid rgb(121, 165, 165);
+  outline: 0;
+}
