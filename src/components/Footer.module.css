@@ -1,0 +1,15 @@
+.rodape {
+  background-color: rgb(121, 165, 165);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1020px;
+  height: 40px;
+  margin: 0 5%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+
+}

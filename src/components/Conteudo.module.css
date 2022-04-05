@@ -1,0 +1,11 @@
+.conteudo {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1020px;
+  height: calc(100vh - 150px);
+  margin: 20px 5%;
+  border: 1px solid rgb(233, 233, 233);
+}
