@@ -2,6 +2,7 @@
   background-color: rgb(121, 165, 165);
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .container {
@@ -12,5 +13,4 @@
   text-align: center;
   line-height: 40px;
   color: #fff;
-
 }

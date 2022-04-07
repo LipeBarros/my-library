@@ -9,3 +9,9 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: rgba(48, 116, 128, 0.418) !important;
+  font-size: 30px !important;
+}
