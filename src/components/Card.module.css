@@ -1,17 +1,14 @@
 .card {
   display: flex;
   flex-direction: column;
-  min-width: 140px;
-  width: 140px;
 }
 
 .capa {
   padding: 8px;
   box-shadow: 3px 5px 8px 0px #00000042;
   position: relative;
-  width: 140px;
-  height: 200px;
   object-fit: cover;
+  height: 100%;
 }
 
 

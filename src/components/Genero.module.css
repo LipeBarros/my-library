@@ -1,12 +1,13 @@
 .slide {
-  width: 160px;
+  width: 140px;
 }
 
-.meuSwiper .swiper-button-next {
-  color: pink !important;
-  background-color: pink !important;
+.slide>div img {
+  height: 200px;
 }
 
-.genero h2 {
+.genero h2 a {
   color: rgb(114, 172, 164);
+  text-decoration: none;
+  font-size: 26px;
 }

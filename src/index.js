@@ -7,17 +7,32 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Home } from './pages/home';
+import { Genero } from './pages/genero';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/cadastro"> <Cadastro /> </Route>
-        <Route path="/login"> <Login /> </Route>
-        <Route path="/"> <Home /> </Route>
+
+        <Route path="/cadastro">
+          <Cadastro />
+        </Route>
+
+        <Route path="/login">
+          <Login />
+        </Route>
+
+        <Route path="/genero">
+          <Genero />
+        </Route>
+
+        <Route path="/">
+          <Home />
+        </Route>
+
       </Switch>
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode >,
   document.getElementById('root')
 );
 

@@ -11,14 +11,19 @@ import classes from "./Genero.module.css"
 
 import { Navigation } from "swiper";
 import { Card } from "./Card";
+import { Link } from "react-router-dom";
 
 function Genero({ titulo }) {
   return (
     <div className={classes.genero}>
-      <h2>{titulo}</h2>
+      <h2>
+        <Link to="/genero" >
+          {titulo}
+        </Link>
+      </h2>
       <Swiper
         slidesPerView={"auto"}
-        spaceBetween={3}
+        spaceBetween={20}
         loop={false}
         navigation={true}
         modules={[Navigation]}
