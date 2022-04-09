@@ -3,12 +3,13 @@
   flex-direction: column;
 }
 
-.capa {
+
+.capa img {
   padding: 8px;
   box-shadow: 3px 5px 8px 0px #00000042;
   position: relative;
   object-fit: cover;
-  height: 100%;
+  width: 100%;
 }
 
 
@@ -19,4 +20,9 @@
 
 .card h4 {
   font-size: 12px;
+  color: rgb(99, 99, 99);
+}
+
+.card .frases {
+  height: 70px;
 }

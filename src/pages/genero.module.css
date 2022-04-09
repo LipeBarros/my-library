@@ -1,10 +1,20 @@
 .livros {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  row-gap: 20px;
+  row-gap: 15px;
   column-gap: 25px;
 }
 
 .galeria img {
-  height: 72%;
+  height: 100%;
+}
+
+.galeria a {
+  height: 100%;
+}
+
+.galeria h1 {
+  color: rgb(114, 172, 164);
+  text-decoration: none;
+  font-size: 26px;
 }

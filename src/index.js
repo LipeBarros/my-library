@@ -8,11 +8,16 @@ import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Genero } from './pages/genero';
+import { Livro } from './pages/livro';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
+
+        <Route path="/livro">
+          <Livro />
+        </Route>
 
         <Route path="/cadastro">
           <Cadastro />
@@ -29,6 +34,7 @@ ReactDOM.render(
         <Route path="/">
           <Home />
         </Route>
+
 
       </Switch>
     </Router>
