@@ -24,9 +24,11 @@ function Livro() {
                 <img src="./star.png" alt="star" />
               </div>
               <h3>Gênero: Romance</h3>
-
+              <label>Data de devolução:</label>
+              <input type="text" name="dataDevolucao" placeholder="dd/mm/aaaa" />
+              <button>Pegar Emprestado</button>
             </div>
-            <button>Pegar Emprestado</button>
+
           </div>
           <div className={classes.sinopse}>
             RANKENSTEIN é muitas décadas anterior à obra de Poe, Bram Stoker ou H.G. Wells, e vem sendo publicado ininterruptamente desde 1818. Pouco menos de dois anos antes, a criatura nascia numa noite de tempestade à beira do lago Genebra.No verão de 1816, Mary e um grupo de escritores ingleses ― seu marido, Percy Shelly, o poeta Lord Byron e John William Polidori ― dividiam uma casa na villa Diodatti, na Suíça. Entusiasmados pela leitura de uma edição francesa de Fantasmagoriana ― coletânea de histórias sobre aparições, espectros, sonhos e fantasmas

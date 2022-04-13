@@ -13,6 +13,9 @@ function Header() {
           </div>
           <ul className={classes.navLink}>
             <li>
+              <Link to="/conta">Minha Conta</Link>
+            </li>
+            <li>
               <Link to="/login">Entrar</Link>
             </li>
           </ul>
