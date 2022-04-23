@@ -10,11 +10,16 @@ import { Home } from './pages/home';
 import { Genero } from './pages/genero';
 import { Livro } from './pages/livro';
 import { MinhaConta } from './pages/minhaConta';
+import { Admin } from './pages/admin';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
+
+        <Route path="/admin">
+          <Admin />
+        </Route>
 
         <Route path="/conta">
           <MinhaConta />
